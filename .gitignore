@@ -1,0 +1,29 @@
+# Ignore virtual environment folder
+myvenv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+.env
+*.env
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Test, build, dist folders
+build/
+dist/
+*.egg-info/
+
+# Pytest
+.pytest_cache/
