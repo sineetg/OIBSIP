@@ -1,4 +1,3 @@
-import pyttsx3
 import speech_recognition as sr
 import pyttsx3
 import random
@@ -68,21 +67,18 @@ def main():
     # Listen for a voice command
     while True:
         user_input = listen()
-        user_input_lower = user_input.lower()
-
 
         if user_input is None:
             speak("Sorry, I didn't catch that.")
             print("[Assistant]: Sorry, I didn't catch that.") 
             continue    # Continue to listen for the next command
-        
-        if any(greet in user_input_lower for greet in greeting_inputs):
-            response = random.choice(greeting_responses)
-            speak(response)
-            print(response)
 
+        if user_input is None:
+            continue
 
-        if user_input_lower:
+        user_input_lower = user_input.lower()
+
+        if user_input_lower in ["exit", "quit", "goodbye"]:
             speak("Goodbye!")
             print("[Assistant]: Goodbye!")
             break
@@ -90,6 +86,14 @@ def main():
         if is_greeting(user_input):
             response = random.choice(greeting_responses)
             speak(response)
+            print(f"[Assistant]: {response}")
         else:
-            speak(user_input)
             print(f"[User]: {user_input}")
+            speak(user_input)
+
+
+if __name__ == "__main__":
+    main()
+
+
+
