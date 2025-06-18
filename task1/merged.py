@@ -1,9 +1,10 @@
 import speech_recognition as sr
 import pyttsx3
 import random
+from datetime import datetime
 
 
-# Define some common greetings and responses
+# ----------- PHRASES & SETUP ------------
 greeting_inputs = ["hi", "hello", "hey", "good morning", "good afternoon", "good evening"]
 greeting_responses = [
     "Hi there! How can I assist you today?",
@@ -13,15 +14,17 @@ greeting_responses = [
 ]
 
 
-# Initialize recognizer class (for recognizing the speech)
+# Initialize speech recognizer and TTS engine
 r = sr.Recognizer()
+engine = pyttsx3.init()
 
-# Reading Microphone as source
+
+# ----------- LISTEN FUNCTION ------------
 def listen():
     with sr.Microphone() as source:
-        print("Listening...")
+        print("[System]: Listening...")
         audio_text = r.listen(source)
-        print("Time over, thanks")
+        print("[System]: Done listening. Processing...")
 
         try:
             return r.recognize_google(audio_text)
@@ -35,22 +38,30 @@ def listen():
             return None
 
 
-
-# Initialize text-to-speech engine
-engine = pyttsx3.init()
-
+# ----------- SPEAK FUNCTION ------------
 def speak(user_input):
     if user_input:
-        print(f"[Assistant]: {user_input}")  # Print the spoken text
+        print(f"[Assistant]: {user_input}")
         engine.say(user_input)
         engine.runAndWait()
-    else:
-        print("[Assistant]: No text to speak.")
+    
 
-
-# Function to check if the user input is a greeting
+# ----------- GREETING CHECK ------------
 def is_greeting(user_input):
     return any(greet in user_input.lower() for greet in greeting_inputs)
+
+
+# ----------- TIME & DATE CHECK ------------
+def is_time_date(text):
+    keywords = ["time", "date", "today", "day", "clock"]
+    return any(keyword in text.lower() for keyword in keywords)
+
+
+def tell_time_and_date():
+    current_time = datetime.now().strftime("%I:%M %p")
+    current_date = datetime.now().strftime("%A, %B %d")
+    return f"The current time is {current_time} and today's date is {current_date}."
+
 
 
 
@@ -60,6 +71,16 @@ def is_greeting(user_input):
     # Else, fallback
     # Exit when the coomand is "exit" || "quit" || "goodbye"
 
+
+
+
+
+
+
+
+
+
+# ----------- MAIN ASSISTANT LOOP ------------
 def main():
     speak("Welcome to your voice assistant!")
     print("[Assistant] : Welcome to your voice assistant!")
@@ -73,9 +94,7 @@ def main():
             print("[Assistant]: Sorry, I didn't catch that.") 
             continue    # Continue to listen for the next command
 
-        if user_input is None:
-            continue
-
+        print(f"[User]: {user_input}")
         user_input_lower = user_input.lower()
 
         if user_input_lower in ["exit", "quit", "goodbye"]:
@@ -83,17 +102,19 @@ def main():
             print("[Assistant]: Goodbye!")
             break
 
-        if is_greeting(user_input):
+        elif is_greeting(user_input):
             response = random.choice(greeting_responses)
             speak(response)
             print(f"[Assistant]: {response}")
+
+        elif is_time_date(user_input):
+            speak(tell_time_and_date())
+
         else:
             print(f"[User]: {user_input}")
             speak(user_input)
 
+            
 
 if __name__ == "__main__":
     main()
-
-
-
