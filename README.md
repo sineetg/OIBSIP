@@ -33,16 +33,15 @@ Install dependencies via:
 
 ```bash
 pip install -r requirements.txt
-```bash
+...code...
 
 
-**Usage**
+## Usage
 Run the assistant:
 
-bash
-Copy
-Edit
+```bash
 python main.py
+
 Speak your commands clearly when prompted.
 
 Supported commands include:
