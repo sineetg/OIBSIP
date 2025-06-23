@@ -1,10 +1,12 @@
 # OIBSIP
+
 Python Programming with Oasis Infobyte
 
-Voice Assistant
+
+**Voice Assistant**
 A simple Python-based voice assistant using speech recognition and text-to-speech. It can greet, tell the time and date, and perform basic web searches using DuckDuckGo’s Instant Answer API.
 
-Features
+**Features**
 Recognizes greetings and responds accordingly
 
 Provides current time and date
@@ -15,7 +17,7 @@ Uses microphone input and speaks responses aloud
 
 Graceful handling of unrecognized commands and errors
 
-Requirements
+**Requirements**
 Python 3.7+
 
 PyAudio (for microphone access)
@@ -32,7 +34,8 @@ bash
 Copy
 Edit
 pip install -r requirements.txt
-Usage
+
+**Usage**
 Run the assistant:
 
 bash
@@ -51,14 +54,14 @@ Searching information (e.g., “Search for Python programming”)
 
 Exit by saying “exit”, “quit”, or “goodbye”.
 
-Notes
+**Notes**
 Ensure your microphone is properly connected and accessible.
 
 Internet connection is required for the search feature.
 
 The search uses DuckDuckGo’s Instant Answer API and may not cover all queries.
 
-Troubleshooting
+**Troubleshooting**
 If speech recognition is not working, check your microphone permissions.
 
 PyAudio installation can be tricky on some systems; see PyAudio installation guide if you face issues.
