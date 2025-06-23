@@ -2,11 +2,6 @@
 
 Python Programming with Oasis Infobyte
 
-
-# OIBSIP
-
-Python Programming with Oasis Infobyte
-
 ---
 
 ## Voice Assistant
@@ -38,7 +33,7 @@ Install dependencies via:
 
 ```bash
 pip install -r requirements.txt
-
+```bash
 
 
 **Usage**
