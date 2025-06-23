@@ -2,6 +2,7 @@ import speech_recognition as sr
 import pyttsx3
 import random
 from datetime import datetime
+import requests
 
 
 # ----------- PHRASES & SETUP ------------
@@ -63,7 +64,21 @@ def tell_time_and_date():
     return f"The current time is {current_time} and today's date is {current_date}."
 
 
+# ----------- SEARCH FUNCTION ------------
+def is_search_query(text):
+    keywords = ["search for", "look up", "find information on", "what is", "who is", "tell me about", "how to", "where is"]
+    return any(phrase in text.lower() for phrase in keywords)
 
+
+def perform_search(query):
+    try:
+        response = requests.get("https://api.duckduckgo.com/", params={"q": query, "format": "json"})
+        data = response.json()
+        result = data.get("AbstractText", "")
+        return result if result else "I couldn't find a short answer, but you can check online for more details."
+    except Exception as e:
+        return f"Something went wrong during the search: {str(e)}"
+    
 
 # def main():
     # Print "Welcome to voice assistant"
@@ -110,9 +125,12 @@ def main():
         elif is_time_date(user_input):
             speak(tell_time_and_date())
 
+        elif is_search_query(user_input):
+            result = perform_search(user_input)
+            speak(result)    
+
         else:
-            print(f"[User]: {user_input}")
-            speak(user_input)
+            speak("I'm not sure how to help with that yet.")
 
             
 
