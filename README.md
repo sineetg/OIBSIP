@@ -6,7 +6,7 @@ Python Programming with Oasis Infobyte
 
 ## Voice Assistant
 
-A simple Python-based voice assistant using speech recognition and text-to-speech.  
+A simple Python-based CLI voice assistant using speech recognition and text-to-speech.  
 It can greet, tell the time and date, and perform basic web searches using DuckDuckGo’s Instant Answer API.
 
 ---
