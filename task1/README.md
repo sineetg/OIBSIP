@@ -36,6 +36,7 @@ It can greet, tell the time and date, and perform basic web searches using DuckD
   ```
   python -m venv venv
   source venv/bin/activate  # On Windows: venv\Scripts\activate
+  ```
 
 3. **Install required packages:**
 
@@ -75,15 +76,15 @@ python merged.py
 
 
 ## Notes
-Ensure your microphone is properly connected and accessible.
+   - Ensure your microphone is properly connected and accessible.
 
-Internet connection is required for the search feature.
+   - Internet connection is required for the search feature.
 
-The search uses DuckDuckGo’s Instant Answer API and may not cover all queries.
+   - The search uses DuckDuckGo’s Instant Answer API and may not cover all queries.
 
 ## Troubleshooting
-If speech recognition is not working, check your microphone permissions.
+   - If speech recognition is not working, check your microphone permissions.
 
-PyAudio installation can be tricky on some systems; see PyAudio installation guide if you face issues.
+   - PyAudio installation can be tricky on some systems; see PyAudio installation guide if you face issues.
 
-For any unexpected errors, restart the assistant.
+   - For any unexpected errors, restart the assistant.
