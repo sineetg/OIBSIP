@@ -30,6 +30,7 @@ BMI = weight (kg) / (height (m) × height (m))
 
 ```bash
 python bmi_calculator.py
+```bash
 
 ## 🧪 Sample Output
 
