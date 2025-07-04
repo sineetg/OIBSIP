@@ -1,6 +1,14 @@
-# 🧮 BMI Calculator (Command-Line)
+# TASK 2
 
-A simple command-line tool written in Python to calculate Body Mass Index (BMI) based on user input.
+Python Programming with Oasis Infobyte
+
+---
+
+# 🧮 BMI Calculator
+
+A simple command-line tool written in Python to calculate Body Mass Index (BMI) based on user input, with input validation and classification
+
+---
 
 ## 📌 Features
 
@@ -13,6 +21,8 @@ A simple command-line tool written in Python to calculate Body Mass Index (BMI) 
   - Obesity
 - Handles invalid input gracefully
 
+---
+
 ## 💡 What is BMI?
 
 BMI (Body Mass Index) is a measure of body fat based on height and weight that applies to adult men and women.
@@ -20,6 +30,8 @@ BMI (Body Mass Index) is a measure of body fat based on height and weight that a
 **Formula:**
 BMI = weight (kg) / (height (m) × height (m))
 
+
+---
 
 ## 🚀 How to Run
 
@@ -31,6 +43,8 @@ BMI = weight (kg) / (height (m) × height (m))
 ```bash
 python bmi_calculator.py
 ```
+
+---
 
 ## 🧪 Sample Output
 
