@@ -34,9 +34,11 @@ python bmi_calculator.py
 
 ## 🧪 Sample Output
 
+```bash
 === BMI Calculator ===
 Enter your weight in kilograms (kg): 68
 Enter your height in meters (m): 1.75
 
 Your BMI is: 22.2
 You are classified as: Normal weight
+```
