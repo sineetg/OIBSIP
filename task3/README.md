@@ -73,17 +73,20 @@ Once connected, users can begin exchanging messages.
  ## 📤 Example Interaction
 
 **Server Terminal:**
+```bash
 Server started. Waiting for connection on 127.0.0.1:12345...
 Connected by ('127.0.0.1', 55678)
 You (server): Hello
 Client: Hi there!
 You (server): How are you?
 Client: Doing well, thanks!
-
+```
 
 **Client Terminal:**
+```bash
 Connected to the server.
 Server: Hello
 You (client): Hi there!
 Server: How are you?
 You (client): Doing well, thanks!
+```
