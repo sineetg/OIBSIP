@@ -17,9 +17,9 @@ The internship focuses on strengthening core Python skills through practical, re
 
 Throughout the internship, I worked on some small projects and assignments to demonstrate my understanding of Python. Each project is documented in its respective folder with code and a `README.md` for explanation.
 It includes:
-  - **voice assistant**,
+  - **Voice assistant**,
   - **BMI calculator**, and
-  - **chat application** using core Python and various external libraries.
+  - **Chat application** using core Python and various external libraries.
     
 ## 🔧 Tools & Technologies
 
