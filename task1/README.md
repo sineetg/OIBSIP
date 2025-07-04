@@ -13,11 +13,12 @@ It can greet, tell the time and date, and perform basic web searches using DuckD
 
 ## Features
 
-- Recognizes greetings and responds accordingly
-- Provides current time and date
-- Performs web searches and gives summarized answers
-- Uses microphone input and speaks responses aloud
-- Graceful handling of unrecognized commands and errors
+- **Voice Recognition:** Listens to your voice commands using the microphone.
+- **Text-to-Speech:** Responds to you using speech synthesis.
+- **Greetings:** Recognizes greetings and responds accordingly.
+- **Time and Date:** Tells the current time and date when asked.
+- **Search:** Performs simple web searches and summarizes answers.
+- **Exit Commands:** Gracefully exits on commands like "exit", "quit", or "goodbye".
 
 ---
 
@@ -33,7 +34,7 @@ Install dependencies via:
 
 ```bash
 pip install -r requirements.txt
-...code...
+```
 
 
 ## Usage
@@ -41,6 +42,7 @@ Run the assistant:
 
 ```bash
 python main.py
+```
 
 Speak your commands clearly when prompted.
 
