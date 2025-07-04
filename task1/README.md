@@ -44,6 +44,8 @@ It can greet, tell the time and date, and perform basic web searches using DuckD
   pip install -r requirements.txt
   ```
 
+---
+
 ## Usage
 1. Run the assistant:
 
@@ -63,6 +65,8 @@ python merged.py
 
       - Exit by saying “exit”, “quit”, or “goodbye”.
 
+---
+
 ## Dependencies
   - Python 3.7+
     
@@ -73,7 +77,7 @@ python merged.py
 
 (See full list in requirements.txt)
 
-
+---
 
 ## Notes
    - Ensure your microphone is properly connected and accessible.
@@ -81,6 +85,8 @@ python merged.py
    - Internet connection is required for the search feature.
 
    - The search uses DuckDuckGo’s Instant Answer API and may not cover all queries.
+
+---
 
 ## Troubleshooting
    - If speech recognition is not working, check your microphone permissions.
