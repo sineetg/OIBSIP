@@ -35,7 +35,8 @@ A beginner-friendly text-based chat app built in Python using socket programming
 
 ## 🚀 How to Run
 
-### 1. Make sure you have Python installed (version 3.7+).
+### 1. Make sure you have Python installed.
+(version 3.7+)
 
 ### 2.Clone this repository or download the folder.
 
