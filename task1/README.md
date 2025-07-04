@@ -1,4 +1,4 @@
-# OIBSIP
+# TASK 1 
 
 Python Programming with Oasis Infobyte
 
@@ -22,48 +22,66 @@ It can greet, tell the time and date, and perform basic web searches using DuckD
 
 ---
 
-## Requirements
+## Setup Instructions
 
-- Python 3.7+
-- PyAudio (for microphone access)
-- SpeechRecognition
-- pyttsx3
-- requests
+1. **Clone the repository:**
 
-Install dependencies via:
+   ```bash
+   git clone https://github.com/yourusername/voice-assistant.git
+   cd voice-assistant
+   ```
+   
+2. **Create and activate a virtual environment** (optional but recommended):
 
-```bash
-pip install -r requirements.txt
-```
+  ```
+  python -m venv venv
+  source venv/bin/activate  # On Windows: venv\Scripts\activate
 
+3. **Install required packages:**
+
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 ## Usage
-Run the assistant:
+1. Run the assistant:
 
 ```bash
-python main.py
+python merged.py
 ```
 
-Speak your commands clearly when prompted.
+2. Speak your commands clearly when prompted.
 
-Supported commands include:
+3. Supported commands include:
 
-Greetings like “hi”, “hello”, etc.
+      - Greetings like “hi”, “hello”, etc.
 
-Asking for the time or date (e.g., “What time is it?”)
+      - Asking for the time or date (e.g., “What time is it?”)
 
-Searching information (e.g., “Search for Python programming”)
+      - Searching information (e.g., “Search for Python programming”)
 
-Exit by saying “exit”, “quit”, or “goodbye”.
+      - Exit by saying “exit”, “quit”, or “goodbye”.
 
-**Notes**
+## Dependencies
+  - Python 3.7+
+    
+  - PyAudio (for microphone access)
+  - SpeechRecognition
+  - pyttsx3
+  - requests
+
+(See full list in requirements.txt)
+
+
+
+## Notes
 Ensure your microphone is properly connected and accessible.
 
 Internet connection is required for the search feature.
 
 The search uses DuckDuckGo’s Instant Answer API and may not cover all queries.
 
-**Troubleshooting**
+## Troubleshooting
 If speech recognition is not working, check your microphone permissions.
 
 PyAudio installation can be tricky on some systems; see PyAudio installation guide if you face issues.
