@@ -23,7 +23,7 @@ BMI = weight (kg) / (height (m) × height (m))
 
 ## 🚀 How to Run
 
-1. Make sure you have Python installed (version 3.x).
+1. Make sure you have Python installed (version 3.7+).
 2. Clone this repository or download the `bmi_calculator.py` file.
 3. Open a terminal in the project folder.
 4. Run the script:
@@ -31,7 +31,7 @@ BMI = weight (kg) / (height (m) × height (m))
 ```bash
 python bmi_calculator.py
 
-**## 🧪 Sample Output**
+## 🧪 Sample Output
 
 === BMI Calculator ===
 Enter your weight in kilograms (kg): 68
