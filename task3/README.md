@@ -58,12 +58,12 @@ Once connected, users can begin exchanging messages.
 
 - This version supports only one client at a time.
 
-  - No encryption or threading — this is kept minimal for learning purposes.
+- No encryption or threading — this is kept minimal for learning purposes.
 
 - You can improve it by adding:
 
-      - Multi-client support (using threading)
+   - Multi-client support (using threading)
 
-      - Encryption (using ssl or cryptography)
+   - Encryption (using ssl or cryptography)
 
-      - GUI with Tkinter or PyQt
+   - GUI with Tkinter or PyQt
