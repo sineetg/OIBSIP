@@ -21,9 +21,9 @@ A beginner-friendly text-based chat app built in Python using socket programming
 
 ## 🧠 Concepts Used
 
-- **Socket Programming**
-- **TCP Connections**
-- **Client-Server Communication**
+- Socket Programming
+- TCP Connections
+- Client-Server Communication
 
 ---
 
@@ -35,16 +35,18 @@ A beginner-friendly text-based chat app built in Python using socket programming
 
 ## 🚀 How to Run
 
-### 1. Start the Server
+### 1. Make sure you have Python installed (version 3.7+).
 
-Open a terminal and run:
+### 2.Clone this repository or download the folder.
+
+### 3. Open a terminal in the project folder and run the script:
 
 ```bash
 python server.py
 ```
 This will start the server and wait for a client to connect.
 
-### 2. Start the Client
+### 4. Start the Client
 In another terminal (or another computer on the same network), run:
 
 ```bash
